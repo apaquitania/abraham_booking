@@ -1,0 +1,83 @@
+/* #################### home css ####################*/
+.promo-container,.promo-destination,.featured-destination {
+    h2 {
+    padding: 15px 27px;
+    }
+}
+
+.promo-container {
+    margin-top: 80px;
+}
+
+.promo-destination, .featured-destination {
+    margin-top: 10px;
+}
+
+/* #################### Carousel ####################*/
+
+.carousel-promo {
+    margin-left: 27px; 
+    .promo-img {
+        padding: 0 5px;
+
+        
+        $promo: 5;
+
+        @for $x from 1 through $promo {
+
+            .promo-#{$x} {
+                background-image: url(../image/p#{$x}.JPG );
+                width: 320px;
+                height: 150px;
+                border-radius: 10px;
+                @extend %bgCentercenter;
+            }
+
+        }
+
+        $promo2: 2;
+        @for $x from 1 through $promo2 {
+
+            .p-dest-#{$x} {
+                background-image: url(../image/f#{$x}.png );
+                width: 320px;
+                height: 150px;
+                border-radius: 10px;
+                @extend %bgCentercenter;
+            }
+
+        }
+
+        $promo3: 3;
+        @for $x from 1 through $promo3 {
+
+            .dest-#{$x} {
+                background-image: url(../image/g#{$x}.png );
+                width: 150px;
+                height: 150px;
+                border-radius: 10px;
+                @extend %bgCentercenter;
+            }
+
+        }
+
+        $promo4: 6;
+        @for $x from 1 through $promo4 {
+
+            .featu-#{$x} {
+                background-image: url(../image/a#{$x}.png );
+                width: 150px;
+                height: 150px;
+                border-radius: 10px;
+                @extend %bgCentercenter;
+            }
+
+        }
+    }
+}
+
+.featured-box{
+    @extend %row;
+    @extend %flexBetween;
+    flex-wrap: wrap;
+}

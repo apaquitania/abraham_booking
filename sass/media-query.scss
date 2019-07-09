@@ -1,0 +1,249 @@
+/* #################### Media Query ####################*/
+@media only screen and (max-width: 1550px) {
+    .login {
+        width: 45%;
+    }
+
+    .flight-destination>img,
+    .flight-destination .clone-box>img {
+        width: 30px;
+    }
+
+    .passenger-container {
+        width: 80%;
+    }
+
+    .front-page {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .seat-class {
+        label {
+            font-size: 12px;
+
+        }
+
+        span {
+            min-width: 143px;
+        }
+    }
+
+    .passenger-container {
+        width: 95%;
+    }
+
+    #card-container {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .login {
+        padding: 30px 10px;
+
+    }
+
+    .front-page {
+        padding: 30px 47px;
+    }
+
+
+
+    .seat-class {
+        label {
+            font-size: 12px;
+
+        }
+
+        span {
+            min-width: 143px;
+        }
+    }
+
+    .passenger-container {
+        width: 100%;
+    }
+
+    #card-container {
+        padding: 30px 47px;
+    }
+
+    #card-container.book-total {
+        padding: 0;
+
+        .book-cont {
+            padding: 20px 47px;
+        }
+    }
+
+    .card-container.login .btn {
+        padding: 0 27px;
+
+        a {
+            color: $light-color;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .top-space {
+        display: block;
+        background-color: $dark-color;
+        height: 23px;
+
+    }
+
+    .nav-container {
+        height: 140px;
+        padding: 20px 27px;
+
+        .user .user-name {
+            h3 {
+                font-size: 22px;
+            }
+            h5 {
+                font-size: 14px;
+            }
+        }
+
+        nav {
+            position: absolute;
+            bottom: -170px;
+            padding: 0;
+            justify-content: center;
+            background-color: transparent;
+
+            ul {
+                border-radius: 10px;
+                box-shadow: 0 5px 10px #000;
+            }
+
+
+        }
+    }
+
+    .nav-container nav .logo-nav {
+        width: 0;
+        img {
+            display: none;
+        }
+    }
+
+
+    .front-page {
+        width: 326px;
+    }
+
+
+    .login-logo {
+        height: 259px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
+    }
+
+    .login {
+        margin: 0;
+        top: -65px;
+    }
+
+    .flight-cont {
+        top: 0;
+        margin-top: 32px;
+    }
+
+    .login-logo img {
+        margin-top: 60px;
+    }
+
+    .fligh-seat {
+        padding-right: 0;
+    }
+
+    .btn {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding: 12px 28px;
+        background-color: $light-color;
+
+        button {
+            width: 359px;
+            margin: 0;
+        }
+    }
+
+    #card-container {
+        position: initial;
+        width: 400px;
+
+        img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 12px;
+        }
+
+        h2,
+        h1 {
+            color: $sec-color;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+    }
+
+    #card-container.login .facility img,
+    #card-container.login .bag img {
+        width: 30px;
+        height: auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    #card-container {
+        width: 340px;
+        padding: 12px 23px;
+
+        img {
+            width: 150px;
+            height: auto;
+        }
+
+        h3 {
+            font-size: 12px;
+        }
+
+        h2,
+        h1 {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    .login .card-price a {
+        padding: 10px 20px;
+    }
+
+    #card-container .book-cont img {
+        width: 30px;
+        height: auto;
+    }
+
+}

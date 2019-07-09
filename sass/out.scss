@@ -1,0 +1,57 @@
+/* #################### out css ####################*/
+.flight-book {
+    @extend %row;
+    @extend %flexBetween;
+
+    p {
+        font-size: 18px;
+        margin-top: 10px;
+        color: $primary-color;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+}
+
+.time-flight p {
+    color: $dark-color;
+    font-size: 20px;
+}
+
+.card-container.login .bag,
+.card-container.login .facility {
+    justify-content: flex-start;
+    margin-top: 38px;
+
+    img {
+        width: 30px;
+    }
+
+    p {
+        color: $sec-color;
+        margin: 0 10px;
+    }
+}
+
+.card-container.login .facility {
+    margin: 0;
+
+    p {
+        font-size: 24px;
+        margin: 0 12px;
+    }
+}
+
+.card-container.login .total {
+    border-top: 2px dashed $primary-color;
+    margin-top: 10px;
+    p {
+        font-size: 22px;
+        color: $dark-color;
+
+    }
+    div {
+        @extend %row;
+        @extend %flexBetween;
+    }
+}
+

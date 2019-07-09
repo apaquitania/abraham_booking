@@ -1,0 +1,26 @@
+/* #################### Global css ####################*/
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    height: auto;
+    background-image: url(../image/backgroung.JPG );
+    @extend %bgCenter;
+}
+
+.body-wrapper{
+    background-color: rgba(255,255,255,.5);
+    min-height: 100vh;
+    height: auto;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: $sec-color;
+}
+
+.top-space {
+    background-color: $dark-color;
+    min-height: 23px;
+}

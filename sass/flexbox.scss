@@ -1,0 +1,78 @@
+/* #################### Flexbox css ####################*/
+
+%row {
+    display: flex;
+    box-sizing: border-box;
+}
+
+%column {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+%box {
+    background: $light-color;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px $dark-color;
+    border-radius: 10px;
+}
+
+$columns: 12;
+
+@for $i from 1 through $columns {
+
+    .col-#{$i} {
+        width: 100% / $columns * $i;
+    }
+
+}
+
+
+%flexCenter {
+    justify-content: center;
+    align-items: center;
+}
+
+%flexCenter-baseline {
+    justify-content: center;
+    align-items: center;
+}
+
+%flexBetween {
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flexEqual {
+    justify-content: space-around;
+    align-items: center;
+}
+
+%flexStart {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+%flexEnd {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+%flexCenterStart{
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+// background  
+%bgCenter {
+    background-repeat: no-repeat; 
+}
+
+%bgCentercenter {
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover;
+}
+

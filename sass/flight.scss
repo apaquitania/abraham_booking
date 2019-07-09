@@ -1,0 +1,58 @@
+.top-heading {
+    h2{
+        color: $light-color;
+        margin-left: 40px;
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+.card-padding{
+    padding: 12px 27px;
+}
+.card-container.login {
+    @extend %column;
+    margin: 0 auto;
+    margin-top: 12px;
+    min-width: 50px;
+    img{
+        width: 300px;
+        height: auto;
+        border-bottom: 10px;
+    }
+    h3{
+        color: $primary-color;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    h2, h1{
+        color: $sec-color;
+        font-size: 20px;
+    }
+    h1{
+        font-size: 25px;
+    }
+
+    h1, h2, h3 {
+        white-space: nowrap;
+    }
+}
+
+.card-detail{
+    @extend %column;
+    .card-name {
+        @extend %row;
+       
+        .distance{
+            margin-left: 33px;
+        }
+        .transit{
+            margin-left: 71px;
+        }
+    }
+    .card-price{
+        display: flex;
+        justify-content: space-between;
+    }
+}

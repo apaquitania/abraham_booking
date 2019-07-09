@@ -1,0 +1,201 @@
+/* #################### search css ####################*/
+
+.fligt-select {
+    height: 75px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: $primary-color;
+}
+
+.fligh-seat{
+    padding-right: 15px;
+}
+
+
+.flight-destination {
+    @extend %column;
+    @extend %flexCenter;
+
+    .clone-box {
+        @extend %column;
+        @extend %flexCenter;
+    }
+}
+
+.f-title {
+    @extend %row;
+    @extend %flexStart;
+    margin-bottom: 15px;
+    color: $primary-color;
+
+    img {
+        margin-right: 10px;
+        width: 26px;
+        height: auto;
+    }
+}
+
+.seat-class {
+    @extend %row;
+    @extend %flexBetween;
+    flex-wrap: wrap;
+
+    label {
+        cursor: pointer;
+        width: 50%;
+        padding: 0 5px;
+
+        input {
+            display: none;
+
+            &:checked~span {
+                background-color: $sec-color;
+            }
+        }
+    }
+
+    span {
+        text-align: center;
+        display: inline-block;
+        margin: 5px;
+        padding: 10px;
+        width: 100%;
+        min-width: 164px;
+        background: $primary-color;
+        border-radius: 10px;
+        color: #fff;
+    }
+}
+
+.passenger-container {
+    .number-container {
+        @extend %column;
+        @extend %flexStart;
+
+        .f-title {
+            @extend %row;
+            @extend %flexStart;
+            width: 100%;
+        }
+    }
+
+    .amount {
+        @extend %row;
+        @extend %flexBetween;
+        margin-bottom: 30px;
+
+        img {
+            width: 26px;
+            height: auto;
+        }
+
+        input {
+            border-bottom: 3px solid $sec-color;
+            width: 32px;
+            text-align: center;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+.clone-input {
+    h4 {
+        font-size: 20px;
+        align-self: flex-start;
+        margin-bottom: 15px;
+    }
+}
+
+#add-div {
+    background-color: transparent;
+    align-self: flex-start;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    @extend %row;
+    @extend %flexStart;
+
+    img {
+        width: 26px;
+        height: auto;
+    }
+
+    p {
+        text-transform: uppercase;
+        font-size: 15px;
+        color: $sec-color;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+}
+
+.flight-destination>img,
+.flight-destination .clone-box>img {
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.fligt-select {
+    @extend %column;
+    @extend %flexCenter;
+    padding: 10px 27px;
+}
+
+.mobile {
+    height: auto;
+}
+
+.back-btn {
+    align-self: flex-start;
+
+    a {
+        @extend %row;
+        @extend %flexStart;
+        color: $light-color;
+        font-size: 20px;
+       
+        img {
+            width: 20px;
+        }
+
+        p {
+            margin-left: 20px;
+        }
+    }
+}
+
+.flight-menu {
+    max-width: 434px;
+    padding: 5px 27px;
+    margin: 0 auto;
+    @extend %row;
+    @extend %flexBetween;
+    
+    button {
+        box-sizing: border-box;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: transparent;
+        color: $light-color;
+    }
+}
+
+.active {
+    border-bottom: 2px solid $dark-color;
+}
+
+#Round-trip, #Multi-city{
+    display: none;
+}
+
+.flight-cont{
+    width: 50%;
+}
+
+.passenger-container {
+    width: 50%;
+}
+
+.flightTrip {
+    margin-bottom: 80px;
+}

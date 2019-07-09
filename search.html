@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Body Wrapper -->
+    <div class="body-wrapper">
+
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="top-space col-12"></div>
+            <div class="fligt-select mobile col-12">
+                <div class="back-btn">
+                    <a href="#"><img src="/icons/back.png" alt="">
+                        <p>Search Flight</p>
+                    </a>
+                </div>
+                <div class="flight-menu col-12">
+                    <button onclick="openFlight('One-way')" class="flight-trip active">One-way</button>
+                    <button onclick="openFlight('Round-trip')" class="flight-trip">Round-trip</button>
+                    <button onclick="openFlight('Multi-city')" class="flight-trip">Multi-city</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- one-way -->
+            <div class="logsign-container flightTrip col-12" id="One-way">
+                <div class="login flight-cont">
+                    <div id="logCntnr">
+                        <form action="/flight.html" method="post">
+                            <div class="flight-destination col-12">
+                                <div class="input-container margin35 col-12">
+                                    <img src="icons/out-g.png" alt="">
+                                    <div class="inputbox">
+                                        <input type="text" name="" required>
+                                        <label>From</label>
+                                    </div>
+                                </div>
+                                <img src="/icons/change-g.png" alt="" class="rev-btn">
+                                <div class="input-container margin35 col-12">
+                                    <img src="icons/in-g.png" alt="">
+                                    <div class="inputbox">
+                                        <input type="text" name="" required>
+                                        <label>To</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-container margin35 col-12">
+                                <img src="icons/date-g.png" alt="">
+                                <div class="inputbox">
+                                    <input type="text" name="" required>
+                                    <label>Departure Date</label>
+                                </div>
+                            </div>
+
+                            <div class="passenger-container">
+                                <div class="f-title">
+                                    <img src="icons/add-person-g.png" alt="">
+                                    <h5>Passengers</h5>
+                                </div>
+                                <div class="amount">
+                                    <div class="number-container">
+                                        <div class="f-title">
+                                            <img src="icons/person-g.png" alt="">
+                                            <h5>Adult</h5>
+                                        </div>
+                                        <div class="number">
+                                            <img src="/icons/minus-g.png" alt="" class="minus">
+                                            <input type="text" value="0" />
+                                            <img src="/icons/plus-g.png" alt="" class="plus">
+                                        </div>
+                                    </div>
+                                    <div class="number-container">
+                                        <div class="f-title">
+                                            <img src="icons/child-g.png" alt="">
+                                            <h5>Child</h5>
+                                        </div>
+                                        <div class="number">
+                                            <img src="/icons/minus-g.png" alt="" class="minus">
+                                            <input type="text" value="0" />
+                                            <img src="/icons/plus-g.png" alt="" class="plus">
+                                        </div>
+                                    </div>
+                                    <div class="number-container">
+                                        <div class="f-title">
+                                            <img src="icons/infant-g.png" alt="">
+                                            <h5>Infant</h5>
+                                        </div>
+                                        <div class="number">
+                                            <img src="/icons/minus-g.png" alt="" class="minus">
+                                            <input type="text" value="0" />
+                                            <img src="/icons/plus-g.png" alt="" class="plus">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fligh-seat col-12">
+                                <div class="f-title">
+                                    <img src="icons/passenger-g.png" alt="">
+                                    <h5>Seat Class</h5>
+                                </div>
+                                <div class="seat-class col-12">
+                                    <label>
+                                        <input type="radio" name="seat">
+                                        <span>Economy</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="seat">
+                                        <span>Business</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="seat">
+                                        <span>First Class</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="seat">
+                                        <span>Premium Economy</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="btn col-12">
+                                <button type="submit" name="" class="col-12">
+                                    <p>Search</p>
+                                    <img src="/icons/search-w.png" alt="">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- round-trip -->
+            <div class="logsign-container flightTrip col-12" id="Round-trip">
+                <div class="login flight-cont ">
+                    <div id="logCntnr">
+                        <form action="/flight.html" method="post">
+                            <div class="flight-destination col-12">
+                                <div class="input-container margin35 col-12">
+                                    <img src="icons/out-g.png" alt="">
+                                    <div class="inputbox">
+                                        <input type="text" name="" required>
+                                        <label>From</label>
+                                    </div>
+                                </div>
+                                <img src="/icons/change-g.png" alt="" class="rev-btn">
+                                <div class="input-container margin35 col-12">
+                                    <img src="icons/in-g.png" alt="">
+                                    <div class="inputbox">
+                                        <input type="text" name="" required>
+                                        <label>To</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-container margin35 col-12">
+                                <img src="icons/date-g.png" alt="">
+                                <div class="inputbox">
+                                    <input type="text" name="" required>
+                                    <label>Departure Date</label>
+                                </div>
+                            </div>
+                            <div class="input-container margin35 col-12">
+                                <img src="icons/date-g.png" alt="">
+                                <div class="inputbox">
+                                    <input type="text" name="" required>
+                                    <label>Return Date</label>
+                                </div>
+                            </div>
+                            <div class="passenger-container col-12">
+                                <div class="f-title">
+                                    <img src="icons/add-person-g.png" alt="">
+                                    <h5>Passengers</h5>
+                                </div>
+                                <div class="amount">
+                                    <div class="number-container">
+                                        <div class="f-title">
+                                            <img src="icons/person-g.png" alt="">
+                                            <h5>Adult</h5>
+                                        </div>
+                                        <div class="number">
+                                            <img src="/icons/minus-g.png" alt="" class="minus">
+                                            <input type="text" value="0" />
+                                            <img src="/icons/plus-g.png" alt="" class="plus">
+                                        </div>
+                                    </div>
+                                    <div class="number-container">
+                                        <div class="f-title">
+                                            <img src="icons/child-g.png" alt="">
+                                            <h5>Child</h5>
+                                        </div>
+                                        <div class="number">
+                                            <img src="/icons/minus-g.png" alt="" class="minus">
+                                            <input type="text" value="0" />
+                                            <img src="/icons/plus-g.png" alt="" class="plus">
+                                        </div>
+                                    </div>
+                                    <div class="number-container">
+                                        <div class="f-title">
+                                            <img src="icons/infant-g.png" alt="">
+                                            <h5>Infant</h5>
+                                        </div>
+                                        <div class="number">
+                                            <img src="/icons/minus-g.png" alt="" class="minus">
+                                            <input type="text" value="0" />
+                                            <img src="/icons/plus-g.png" alt="" class="plus">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fligh-seat">
+                                <div class="f-title">
+                                    <img src="icons/passenger-g.png" alt="">
+                                    <h5>Seat Class</h5>
+                                </div>
+                                <div class="seat-class col-12">
+                                    <label>
+                                        <input type="radio" name="seat">
+                                        <span>Economy</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="seat">
+                                        <span>Business</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="seat">
+                                        <span>First Class</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="seat">
+                                        <span>Premium Economy</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="btn col-12">
+                                <button type="submit" name="" class="col-12">
+                                    <p>Search</p>
+                                    <img src="/icons/search-w.png" alt="">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- multi city -->
+            <div class="logsign-container flightTrip col-12" id="Multi-city">
+                <div class="login flight-cont ">
+                    <div id="logCntnr">
+                        <form action="/flight.html" method="post">
+                            <div class="flight-destination col-12">
+                                <div class="clone-input col-12" id="clone-input">
+                                    <h4>Flight 1</h4>
+                                    <div class="clone-box to-clone col-12">
+                                        <div class="input-container margin35 col-12">
+                                            <img src="icons/out-g.png" alt="" class="rev-btn">
+                                            <div class="inputbox">
+                                                <input type="text" name="" required>
+                                                <label>From</label>
+                                            </div>
+                                        </div>
+                                        <img src="/icons/change-g.png" alt="">
+                                        <div class="input-container margin35 col-12">
+                                            <img src="icons/in-g.png" alt="">
+                                            <div class="inputbox">
+                                                <input type="text" name="" required>
+                                                <label>To</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clone-input col-12 clone-here">
+
+                                </div>
+                                <button id="add-div"><img src="/icons/add-des.png" alt="">
+                                    <p>add another flight</p>
+                                </button>
+                            </div>
+                            <div class="input-container margin35 col-12">
+                                <img src="icons/date-g.png" alt="">
+                                <div class="inputbox">
+                                    <input type="text" name="" required>
+                                    <label>Departure Date</label>
+                                </div>
+                            </div>
+                            <div class="passenger-container col-12">
+                                <div class="f-title">
+                                    <img src="icons/add-person-g.png" alt="">
+                                    <h5>Passengers</h5>
+                                </div>
+                                <div class="amount">
+                                    <div class="number-container">
+                                        <div class="f-title">
+                                            <img src="icons/person-g.png" alt="">
+                                            <h5>Adult</h5>
+                                        </div>
+                                        <div class="number">
+                                            <img src="/icons/minus-g.png" alt="" class="minus">
+                                            <input type="text" value="0" />
+                                            <img src="/icons/plus-g.png" alt="" class="plus">
+                                        </div>
+                                    </div>
+                                    <div class="number-container">
+                                        <div class="f-title">
+                                            <img src="icons/child-g.png" alt="">
+                                            <h5>Child</h5>
+                                        </div>
+                                        <div class="number">
+                                            <img src="/icons/minus-g.png" alt="" class="minus">
+                                            <input type="text" value="0" />
+                                            <img src="/icons/plus-g.png" alt="" class="plus">
+                                        </div>
+                                    </div>
+                                    <div class="number-container">
+                                        <div class="f-title">
+                                            <img src="icons/infant-g.png" alt="">
+                                            <h5>Infant</h5>
+                                        </div>
+                                        <div class="number">
+                                            <img src="/icons/minus-g.png" alt="" class="minus">
+                                            <input type="text" value="0" />
+                                            <img src="/icons/plus-g.png" alt="" class="plus">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fligh-seat">
+                                <div class="f-title">
+                                    <img src="icons/passenger-g.png" alt="">
+                                    <h5>Seat Class</h5>
+                                </div>
+                                <div class="seat-class col-12">
+                                    <label>
+                                        <input type="radio" name="seat">
+                                        <span>Economy</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="seat">
+                                        <span>Business</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="seat">
+                                        <span>First Class</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="seat">
+                                        <span>Premium Economy</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="btn col-12">
+                                <button type="submit" name="" class="col-12">
+                                    <p>Search</p>
+                                    <img src="/icons/search-w.png" alt="">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+
+        </footer>
+
+        <!-- Modal -->
+
+    </div>
+
+    <!-- JS -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

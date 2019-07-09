@@ -1,0 +1,92 @@
+ /* #################### Navbar css ####################*/
+
+ .nav-container {
+    height: 190px;
+    background-color: $primary-color;
+    padding: 20px 27px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    padding-top: 110px;
+    .user {
+        @extend %row;
+        .user-img {
+            width: 64px;
+            min-height: 64px;
+            border-radius: 10px;
+            background-color: $light-color;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        .user-name {
+            @extend %column;
+            @extend %flexCenterStart;
+            color: $light-color;
+            margin-left: 10px;
+            h3 {
+                font-size: 26px;
+                @extend %f400;
+                margin-bottom: 5px;
+            }
+
+            h5 {
+                color: rgba(255, 255, 255, .56);
+                font-size: 20px;
+                @extend %f300;
+            }
+        }
+    }
+
+    nav {
+        @extend %row;
+        @extend %flexBetween;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 27px;
+        background: $light-color;
+        .logo-nav {
+            width: 200px;
+        }
+
+        ul {
+            @extend %box;
+            @extend %row;
+            @extend %flexCenter;
+            height: 80px;
+            border-radius: 0;
+            box-shadow: none;
+
+            li {
+                @extend %row;
+                @extend %flexCenter;
+                width: 68px;
+                height: 60px;
+
+                a {
+                    @extend %column;
+                    @extend %flexCenter;
+                    color: $dark-color;
+                    font-size: 12px;
+                    font-weight: 500;
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#logo-login.login-logo {
+    background-color:$primary-color;
+    text-align: center;
+    padding: 15px;
+}
